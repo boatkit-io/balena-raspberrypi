@@ -3,7 +3,7 @@ LINUX_RPI_BRANCH ?= "rpi-5.10.y"
 LINUX_RPI_KMETA_BRANCH ?= "yocto-5.10"
 
 SRCREV_machine = "b2c047ab7e17a4ed702d313581620e826c58cc3c"
-SRCREV_meta = "e1979ceb171bc91ef2cb71cfcde548a101dab687"
+SRCREV_meta = "a0238f7f4f2222d08bb18147bb5e24cc877b0546"
 
 KMETA = "kernel-meta"
 

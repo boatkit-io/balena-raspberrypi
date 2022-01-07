@@ -17,6 +17,7 @@ SRC_URI_append = " \
 	file://0010-dts-overlays-Add-UniPi-overlays.patch \
 	file://0001-seeed-studio-can-bus-v2-Add-dtbo-for-this-can-bus.patch \
 	file://0011-USB-serial-Add-support-for-more-Quectel-modules.patch \
+	file://0012-Linux_RT-5.10.78-rt55.patch \
 "
 
 SRC_URI_append_rt-rpi-300 = " \
