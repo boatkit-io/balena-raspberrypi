@@ -1,0 +1,24 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  balena:
+    # Self hosted runner.
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      # Note: We'd have a package installation step here but
+      # that's already done on the self-hosted runner. See the
+      # steps for that here: https://github.com/balena-os/meta-balena/blob/master/README.md
+      # Added in addition:
+      #  - nodejs
+      #  - npm
+      - name: Build Images
+        run: ./.github/workflows/scripts/build-images.sh
